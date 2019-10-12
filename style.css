@@ -1,24 +1,26 @@
 .body {
     height: 0;
     margin: 0;
-    background-image: url(https://i.pinimg.com/474x/85/70/f6/8570f6339d3189c96e340d47a581d3b8.jpg)
+    background-image: url(https://i.pinimg.com/474x/85/70/f6/8570f6339d3189c96e340d47a581d3b8.jpg);
 }
 
 .container {
     background: white;
-    height: 50px;;
+    height: 50px;
 }
 
 .header {
     display: flex;
     justify-content:space-between;
     margin: 0px 40px 0px 150px;
+    max-width: 960px;
 }
 
 .title {
     text-align: center;
     font-size: 40px;
     background-color: darkcyan;
+    color: white;
 }
 
 .link {
@@ -33,12 +35,10 @@
 }
 
 .h1 {
+    padding: 10px;
+    margin: 10px;
     color: darkcyan;
-    font-size: 20px;
-}
-.about-me {
-    box-sizing: border-box;
-    padding: 20px;
+    font-size: 30px;
 }
 
 .image {
@@ -62,37 +62,78 @@
 .h1 {
     border-bottom: solid 1px darkcyan;
 }
+
 .group {
-    position: center;
-    
+    border-radius: 5px;
+  padding: 20px;
 }
 
-.inside {
-    display: fixed;
-    max-width: 960px;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
 }
 
 .input {
-    border: 1px solid #999;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .button {
+    width: 10%;
     background-color: darkcyan;
     color: white;
-    font-size: 15px;
+    padding: 14px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.buttonbox {
+    display: flex;
+    
 }
 
 .row {
-    max-width: 50px;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -10px 20px -10px;
 }
 
 .column {
-    width: 100%;
-    margin: 0 10px 20px 10px;
+    position: relative;
+  text-align: center;
+  color: white;
 }
 
+.element {
+    max-height: 150px;
+}
+
+@media(min-width: 600px) {
+    .column--desktop-1 { 
+    width: calc(41.6666666667% - 20px);
+    }
+
 .image1 {
-    
+    margin: 10px;
+    height: 100%;
+    width: 60%;
+}
+
+.type {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    background-color: darkcyan;
 }
